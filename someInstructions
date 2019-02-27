@@ -1,0 +1,5 @@
+config.vm.box - OS
+config.vm.provider - VirtualBox
+config.vm.network - how host see my box
+config.vm.synced_folder -how access computer files from host computer
+config.vm.provision - what we want( LAMP,Nodejs etc)
