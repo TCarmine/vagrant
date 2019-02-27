@@ -15,6 +15,13 @@ Vagrant.configure("2") do |config|
   # Box Settings
   config.vm.box = "ubuntu/trusty64"
 
+  config.vm.provider "virtulabox" do |vb|
+  # Display the VirtualBox GUI when booting the machine
+     vb.gui = true
+  
+  # Customize the amount of memory on the VM:
+    vb.memory = "1024"
+  end
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
